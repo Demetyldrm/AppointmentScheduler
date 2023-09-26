@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPaneMain" prefHeight="421.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yildirim.dbclientapp.controller.MainScreen">
+    <children>
+        <Label fx:id="lblMain" layoutX="108.0" layoutY="65.0" text="Appointment Scheduling System">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnViewApp" layoutX="133.0" layoutY="147.0" mnemonicParsing="false" onAction="#btnOnActionViewApp" prefHeight="26.0" prefWidth="245.0" text="View Appointments" />
+        <Button fx:id="btnViewCustomer" layoutX="133.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnOnActionViewCustomer" prefHeight="26.0" prefWidth="245.0" text="View Customers" />
+        <Button fx:id="btnViewReports" layoutX="133.0" layoutY="253.0" mnemonicParsing="false" onAction="#btnOnActionViewReports" prefHeight="26.0" prefWidth="245.0" text="View Reports" />
+        <Button fx:id="btnLogout" layoutX="132.0" layoutY="304.0" mnemonicParsing="false" onAction="#btnOnActionLogout" prefHeight="26.0" prefWidth="245.0" text="Logout" />
+    </children>
+</AnchorPane>

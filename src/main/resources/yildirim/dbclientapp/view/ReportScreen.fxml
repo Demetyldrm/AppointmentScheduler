@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchPaneReports" prefHeight="710.0" prefWidth="812.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yildirim.dbclientapp.controller.ReportScreen">
+    <children>
+        <TableView fx:id="tblViewReportsContacts" layoutX="23.0" layoutY="100.0" prefHeight="150.0" prefWidth="756.0">
+            <columns>
+                <TableColumn fx:id="tColContactsAppID" prefWidth="66.0" text="App ID" />
+                <TableColumn fx:id="tColContactsTitle" prefWidth="54.0" text="Title" />
+                <TableColumn fx:id="tColContactsDescription" prefWidth="83.0" text="Description" />
+                <TableColumn fx:id="tColContactsLocation" prefWidth="81.0" text="Location" />
+                <TableColumn fx:id="tColContactsType" minWidth="0.0" prefWidth="91.0" text="Type" />
+                <TableColumn fx:id="tColContactsStartDate" prefWidth="75.0" text="Start Date" />
+                <TableColumn fx:id="tColContactsEndDate" prefWidth="75.0" text="End Date" />
+                <TableColumn fx:id="tColContactsCustomerID" prefWidth="75.0" text="Customer ID" />
+                <TableColumn fx:id="tColContactsUserID" prefWidth="75.0" text="User ID" />
+            <TableColumn fx:id="tColContactsContactID" prefWidth="90.0" text="Contact ID" />
+            </columns>
+        </TableView>
+        <Label fx:id="lblReports" layoutX="25.0" layoutY="4.0" text="Reports">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblByContact" layoutX="25.0" layoutY="47.0" text="Appointments By Contact" />
+        <ComboBox fx:id="comboReportsContacts" layoutX="178.0" layoutY="46.0" onAction="#onActionComboReportContact" prefHeight="26.0" prefWidth="150.0" />
+        <Button fx:id="btnCancel" layoutX="725.0" layoutY="665.0" mnemonicParsing="false" onAction="#btnOnActionCancel" text="Cancel" />
+      <TableView fx:id="tblViewReportsCustomerID" layoutX="25.0" layoutY="530.0" prefHeight="114.0" prefWidth="756.0">
+         <columns>
+            <TableColumn fx:id="tColAppID11" prefWidth="66.0" text="App ID" />
+            <TableColumn fx:id="tColTitle11" prefWidth="54.0" text="Title" />
+            <TableColumn fx:id="tColDescription11" prefWidth="83.0" text="Description" />
+            <TableColumn fx:id="tColLocation11" prefWidth="81.0" text="Location" />
+            <TableColumn fx:id="tColType11" minWidth="0.0" prefWidth="91.0" text="Type" />
+            <TableColumn fx:id="tColStartDate11" prefWidth="75.0" text="Start Date" />
+            <TableColumn fx:id="tColEndDate11" prefWidth="75.0" text="End Date" />
+            <TableColumn fx:id="tColCustomerID11" prefWidth="75.0" text="Customer ID" />
+            <TableColumn fx:id="tColUserID11" prefWidth="75.0" text="User ID" />
+            <TableColumn fx:id="tColContactID11" prefWidth="90.0" text="Contact ID" />
+         </columns>
+      </TableView>
+      <Label fx:id="lblByCustomerID" layoutX="25.0" layoutY="485.0" text="Appointments by Customer ID" />
+      <ComboBox fx:id="comboByCustomerID" layoutX="198.0" layoutY="483.0" onAction="#onActionComboCustomerID" prefWidth="150.0" />
+      <Label layoutX="99.0" layoutY="292.0" text="Appointmenrs by Month" />
+      <Label layoutX="286.0" layoutY="292.0" text="Appointments by Type" />
+      <Label layoutX="485.0" layoutY="296.0" text="Total " />
+      <ComboBox fx:id="comboByMonth" layoutX="90.0" layoutY="330.0" onAction="#onActionTypeMonth" prefWidth="150.0" />
+      <ComboBox fx:id="comboByType" layoutX="282.0" layoutY="330.0" onAction="#onActionTypeMonth" prefWidth="150.0" />
+      <Label fx:id="lblCount" layoutX="496.0" layoutY="336.0" text="??" />
+    </children>
+</AnchorPane>

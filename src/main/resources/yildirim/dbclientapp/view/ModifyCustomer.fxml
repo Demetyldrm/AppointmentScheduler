@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPaneModCus" prefHeight="493.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yildirim.dbclientapp.controller.ModifyCustomer">
+   <children>
+      <Label fx:id="lblModifyCustomer" layoutX="35.0" layoutY="51.0" text="Modify Customer">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <GridPane fx:id="gridPaneModCus" layoutX="33.0" layoutY="129.0" prefHeight="183.0" prefWidth="320.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblCustomerID" text="Customer ID" />
+            <Label fx:id="lblCustomerName" text="Customer Name" GridPane.rowIndex="1" />
+            <Label fx:id="lblAddress1" text="Address " GridPane.rowIndex="2" />
+            <Label fx:id="lblZipCode" text="Zip Code" GridPane.rowIndex="3" />
+            <Label fx:id="lblPhoneNumber" text="Phone Number" GridPane.rowIndex="4" />
+            <TextField fx:id="txtCustomerID" editable="false" promptText="Auto Gen-Disabled" GridPane.columnIndex="1" />
+            <TextField fx:id="txtCustomerName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtAddress" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtZipCode" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtPhoneNumber" prefHeight="26.0" prefWidth="161.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <ComboBox fx:id="comboModifyCountry" layoutX="110.0" layoutY="344.0" onAction="#comboModifyCountryOnAction" prefWidth="150.0" />
+      <ComboBox fx:id="comboModifyDivision" layoutX="367.0" layoutY="343.0" onAction="#comboModifyDivisionOnAction" prefWidth="150.0" />
+      <Label fx:id="lblCountry" layoutX="35.0" layoutY="349.0" text="Country" />
+      <Label fx:id="lblDivision" layoutX="303.0" layoutY="349.0" text="Division" />
+      <Button fx:id="btnSave" layoutX="375.0" layoutY="413.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="26.0" prefWidth="60.0" text="Save" />
+      <Button fx:id="btnCancel" layoutX="460.0" layoutY="412.0" mnemonicParsing="false" onAction="#btnCancelOnAction" prefHeight="27.0" prefWidth="60.0" text="Cancel" />
+   </children>
+</AnchorPane>

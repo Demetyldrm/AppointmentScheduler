@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPaneCustomer" prefHeight="469.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yildirim.dbclientapp.controller.CustomerScreens">
+    <children>
+        <TableView fx:id="tblViewCustomer" layoutX="64.0" layoutY="87.0" maxHeight="293.0" maxWidth="749.0" prefHeight="238.0" prefWidth="591.0">
+            <columns>
+                <TableColumn fx:id="tColCustomerID" prefWidth="79.0" text="Customer ID" />
+                <TableColumn fx:id="tColName" prefWidth="93.0" text="Name" />
+                <TableColumn fx:id="tColAddress" prefWidth="138.0" text="Address" />
+                <TableColumn fx:id="tColZipCode" minWidth="0.0" prefWidth="99.0" text="Zip code" />
+                <TableColumn fx:id="tColPhone" minWidth="0.0" prefWidth="89.0" text="Phone" />
+            <TableColumn fx:id="tColDivision" prefWidth="92.0" text="Division" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnAddCustomer" layoutX="38.0" layoutY="380.0" mnemonicParsing="false" onAction="#btnOnActionAddCustomer" prefHeight="26.0" prefWidth="140.0" text="Add Customer" />
+        <Button fx:id="btnModifyCustomer" layoutX="211.0" layoutY="380.0" mnemonicParsing="false" onAction="#btnOnActionModifyCustomer" prefHeight="26.0" prefWidth="140.0" text="Modify Customer" />
+        <Button fx:id="btnDeleteCustomer" layoutX="387.0" layoutY="380.0" mnemonicParsing="false" onAction="#btnOnActionDeleteCustomer" prefHeight="26.0" prefWidth="140.0" text="Delete Customer" />
+        <Button fx:id="btnCancel" layoutX="562.0" layoutY="380.0" mnemonicParsing="false" onAction="#btnOnActionCancel" prefHeight="26.0" prefWidth="140.0" text="Cancel" />
+        <Label layoutX="72.0" layoutY="36.0" text="Customer Screen">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

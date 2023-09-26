@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPaneAppointments" prefHeight="535.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yildirim.dbclientapp.controller.AppointmentScreens">
+    <children>
+        <TableView fx:id="tblViewApp" layoutX="14.0" layoutY="84.0" prefHeight="268.0" prefWidth="749.0">
+            <columns>
+                <TableColumn fx:id="tColAppID" prefWidth="75.0" text="App ID" />
+                <TableColumn fx:id="tColTitle" prefWidth="75.0" text="Title" />
+                <TableColumn fx:id="tColDescription" prefWidth="75.0" text="Description" />
+                <TableColumn fx:id="tColLocation" prefWidth="75.0" text="Location" />
+                <TableColumn fx:id="tColContact" prefWidth="75.0" text="Contact  ID" />
+                <TableColumn fx:id="tColType" prefWidth="75.0" text="Type" />
+                <TableColumn fx:id="tColStartDate" prefWidth="75.0" text="Start Date/Time" />
+                <TableColumn fx:id="tColEndDate" prefWidth="75.0" text="End Date/Time" />
+                <TableColumn fx:id="tColCustomerID" prefWidth="75.0" text="Customer ID" />
+                <TableColumn fx:id="tColUserID" prefWidth="75.0" text="User ID" />
+            </columns>
+        </TableView>
+        <Label fx:id="lblAppSchedule" layoutX="18.0" layoutY="36.0" text="Appointment Schedules">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="rbByWeek" layoutX="269.0" layoutY="44.0" mnemonicParsing="false" onAction="#rbOnActionByWeek" text="View by week">
+         <toggleGroup>
+            <ToggleGroup fx:id="appGroup" />
+         </toggleGroup></RadioButton>
+        <RadioButton fx:id="rbByMonth" layoutX="397.0" layoutY="44.0" mnemonicParsing="false" onAction="#rbOnActionByMonth" text="View by month" toggleGroup="$appGroup" />
+        <RadioButton fx:id="rbViewAll" layoutX="523.0" layoutY="45.0" mnemonicParsing="false" onAction="#rbOnActionViewAll" text="View all" toggleGroup="$appGroup" />
+        <Button fx:id="btnAddApp" layoutX="14.0" layoutY="400.0" mnemonicParsing="false" onAction="#btnOnActionAddApp" prefHeight="26.0" prefWidth="140.0" text="Add Appointment" />
+        <Button fx:id="btnModifyApp" layoutX="170.0" layoutY="400.0" mnemonicParsing="false" onAction="#btnOnActionModifyApp" prefHeight="27.0" prefWidth="140.0" text="Modify Appointment" />
+        <Button fx:id="btnDeleteApp" layoutX="323.0" layoutY="400.0" mnemonicParsing="false" onAction="#btnOnActionDeleteApp" prefHeight="27.0" prefWidth="140.0" text="Delete Appointment" />
+        <Button fx:id="btnCancel" layoutX="480.0" layoutY="400.0" mnemonicParsing="false" onAction="#btnOnActionCancel" prefHeight="27.0" prefWidth="140.0" text="Cancel" />
+    </children>
+</AnchorPane>
